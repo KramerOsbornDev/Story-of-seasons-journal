@@ -77,7 +77,5 @@ Townspeople = {
     'Likes': [],
     'Dislikes': ['Fish']
 
-    }
-
-
+    },
 
