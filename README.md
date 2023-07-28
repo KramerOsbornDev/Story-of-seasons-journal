@@ -5,6 +5,8 @@
 - <s>Create a feature that gives useful information about characters when selected (likes/Dislikes)</s>
 - <s>Create a drop-down selection menu</s>
 
+<b><h1> Current Update Goals</h1></b>
+- Finish adding attributes to each character
 
   <h1><b>Future Update Tasks</b></h1>
 
