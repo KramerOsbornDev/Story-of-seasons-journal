@@ -1,9 +1,9 @@
 # Story-of-seasons-journal
 
   <b><h1>Short Term Goals</b></h1>
-- Update code to use Polymorphism**
-- Create a feature that gives useful information about characters when selected (likes/Dislikes)
-- Create a drop-down selection menu
+- <s>Update code to use Polymorphism</s>
+- <s>Create a feature that gives useful information about characters when selected (likes/Dislikes)</s>
+- <s>Create a drop-down selection menu</s>
 
 
   <h1><b>Future Update Tasks</b></h1>
