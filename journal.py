@@ -20,7 +20,7 @@ characters = [
               loves=[],
               likes=['Rare Crop 7', 'Star Milk (S)', 'Star Milk (SS)'],
               dislikes=['Cucumber', 'Fish Stew'],
-              hates=["N/A"]
+              hates=[]
               ),
 
     Character("Lumina", "Female", "Yes",
@@ -74,10 +74,10 @@ characters = [
 
     Character("Rock", "Male", "Yes",
               special=[],
-              loves=[],
-              likes=[],
+              loves=['Toy Flowers', 'Mist Moon Flowers', 'Fossils', 'Meals (Made by you)'],
+              likes=['Coins', 'Clay Figurine'],
               dislikes=[],
-              hates=[]
+              hates=['Burnt or Spoiled food'],
               ),
 
     Character("Baddoch", "Male", "No",
@@ -90,87 +90,90 @@ characters = [
 
     Character("Carter", "Male", "No",
               special=[],
-              loves=['Sashimi'],
-              likes=[],
-              dislikes=[],
+              loves=['Sashimi', 'Super Sashimi', 'Watermelon', 'Melon'],
+              likes=['Fish (All, except Largemouth Bass', 'Milk', 'Most Cooked Meals'],
+              dislikes=['Largemouth Bass', 'Mashed Potatoes', 'Baked Sweet Potato', 'Strawberries'],
               hates=[],
               ),
 
     Character("Charlie", "Male", "No",
               special=[],
-              loves=[],
-              likes=[],
-              dislikes=[],
+              loves=['Bibimbap'],
+              likes=['Flowers, Most Cooked Meals'],
+              dislikes=['Quick Pickles', 'Veggie Tempura', 'Veggie Stir-Fry', 'Oden', 'Gratin'],
               hates=[]
               ),
 
     Character("Chris", "Female", "No",
               special=[],
-              loves=[],
-              likes=[],
-              dislikes=[],
+              loves=['Pound Cake', 'Strawberry Shortcake', 'Fruit Juice', 'Fruit Punch', 'Apple',],
+              likes=['Milk', 'Flowers', 'Most Cooked Meals'],
+              dislikes=['Tomacaro Salad', 'Veggie Cake'],
               hates=[]
               ),
 
     Character("Cole", "Male", "No",
               special=[],
-              loves=[],
-              likes=[],
-              dislikes=[],
+              loves=['Fish Stew', 'Stew', 'Mushroom Curry', ],
+              likes=['Most Cooked Meals'],
+              dislikes=['Watermelon'],
               hates=[]
               ),
 
     Character("Daryl", "Male", "No",
               special=[],
-              loves=['Coin', 'Leaf Fossil', 'Golden Fork', 'Clay Figurine', 'Fish (All)'],
-              likes=[],
-              dislikes=[],
+              loves=['Coin', 'Leaf Fossil', 'Golden Fork', 'Clay Figurine', 'Fish (All)', 'Stew', 'Veggie Stir-Fry',
+                     'Starchy Veggies', 'Curry'],
+              likes=['Egg (All)', 'Cooked Meals'],
+              dislikes=['Herb (Any)', 'Flowers (All)', 'Milk (All)', 'Crops'],
               hates=[]
               ),
 
     Character("Flora", "Female", "No",
               special=[],
-              loves=['Butter(S☆)', 'Golden Wool', 'HomeCooked Meals'],
-              likes=[],
+              loves=['Butter(S☆)', 'Golden Wool', 'Herbal Hot Pot', 'Mushroom Curry', 'Curry', 'Crops' ],
+              likes=['Fish (All)', 'Cooked Meals', ],
               dislikes=[],
               hates=[]
               ),
 
     Character("Garrett", "Male", "No",
               special=['Meuniere Set'],
-              loves=[],
-              likes=[],
-              dislikes=[],
+              loves=['Heartwarming Soup', 'Sashimi', 'Oden', 'Meuniere Set'],
+              likes=['Super Sashimi', 'Mashed Potatoes', ],
+              dislikes=['Gratin', 'Mushroom Gratin', ],
               hates=[]
               ),
 
     Character("Gary", "Male", "No",
               special=[],
-              loves=['Fish', 'Marinade'],
-              likes=[],
-              dislikes=[],
+              loves=['Fish', 'Marinade', 'Heartwarming Soup', 'Sweet Potato Soup', 'Fish Stew', 'Meuniere Set',
+                     'Sushi', 'Crops'],
+              likes=['Super Sashimi', 'Mashed Potatoes',],
+              dislikes=['Gratin', 'Mushroom Gratin', 'Ink-Black Pasta'],
               hates=[]
               ),
 
     Character("Gavin", "Male", "No",
               special=[],
-              loves=['Fish', 'Super Sashimi,'],
-              likes=[],
-              dislikes=[],
+              loves=['Fish', 'Sashimi' 'Super Sashimi,'],
+              likes=['Most Cooked Meals', 'Trick Blue Flower', 'Coins' ],
+              dislikes=['Butter', 'Quick Pickles', 'Grape Pie', 'Melon Pie', 'Blue-Sky Pie', 'Blue Jam'],
               hates=[],
               ),
 
     Character("Hugh", "Male", "No",
               special=[],
-              loves=[],
-              likes=[],
-              dislikes=[],
+              loves=['Milk (Chapter 1)', 'Bronze Coin (Year 1)', 'Silver Coin (Year 2)', 'Heartwarming Soup', 'Stew',
+                    'Mushroom Curry', 'Curry', 'Bananas',],
+              likes=['Most Cooked Meals'],
+              dislikes=['Veggie Cake', 'Crops '],
               hates=[]
               ),
 
     Character("Kate", "Female", "No",
               special=[],
-              loves=[],
+              loves=['Flowers (All)'],
               likes=[],
               dislikes=[],
               hates=[]
@@ -179,21 +182,22 @@ characters = [
     Character("Mukumuku", "Female", "No",
               special=[],
               loves=[],
-              likes=[],
+              likes=['Fish', 'Fish-based Cooked Meals', 'Golden Wool', 'Passion Bloom Flower', 'Egg', 'Milk', 'Fodder',],
               dislikes=[],
               hates=[]
               ),
 
     Character("Nina", "Female", "No",
               special=[],
-              loves=[],
-              likes=[],
+              loves=['Melon(S)', 'Sweet Potato Soup'],
+              likes=['Flowers (All)', 'Homecooked Meals'],
               dislikes=[],
               hates=[]
               ),
+
     Character("Pui", "Male", "No",
               special=[],
-              loves=[],
+              loves=['Meals', 'Milk (Any)', 'All Flowers', 'Eggs', 'Fish', 'Vegetables'],
               likes=[],
               dislikes=[],
               hates=[]
@@ -209,8 +213,8 @@ characters = [
 
     Character("San", "Female", "No",
               special=[],
-              loves=[],
-              likes=[],
+              loves=['Goddess Drop Flower', 'Marinade'],
+              likes=['Flowers', 'Milk', 'Mashed Potatoes'],
               dislikes=[],
               hates=[],
               ),
@@ -226,7 +230,7 @@ characters = [
     Character("Sully", "Male", "No",
               special=[],
               loves=[],
-              likes=[],
+              likes=['Egg', 'Milk (A)'],
               dislikes=[],
               hates=[]
               ),
@@ -251,24 +255,16 @@ characters = [
               special=[],
               loves=['Eggs'],
               likes=[],
-              dislikes=[],
+              dislikes=['Butter(S☆)'],
               hates=[],
               ),
 
     Character("Vesta", "Female", "No",
               special=[],
-              loves=['Butter(S*)', 'Cheese(S*)', 'Strawberries(S)', 'Normal Milk(S*)','Flowers'],
+              loves=['Butter(S*)', 'Cheese(S*)', 'Strawberries(S)', 'Normal Milk(S*)', 'Flowers'],
               likes=[],
-              dislikes=[],
+              dislikes=['Marinade', 'Caprese Salad' ],
               hates=[],
-              ),
-
-    Character("Vinnie", "Male", "No",
-              special=[],
-              loves=[],
-              likes=[],
-              dislikes=[],
-              hates=[]
               ),
 ]
 
@@ -401,9 +397,9 @@ class Gustafa(Character):
 class Rock(Character):
     def __init__(self):
         super().__init__('Male', 'Yes')
-        self.love = []
-        self.like = []
-        self.dislike = []
+        self.love = ['Toy Flowers', 'Mist Moon Flowers', 'Fossils', 'Meals (Made by you)']
+        self.like = ['Coins', 'Clay Figurine']
+        self.dislike = ['Burnt or Spoiled food'],
 
 
 class Baddoch(Character):
@@ -418,36 +414,36 @@ class Baddoch(Character):
 class Carter(Character):
     def __init__(self):
         super().__init__('Male', 'No')
-        self.love = ['Sashimi']
-        self.like = ['Fish', 'Milk', 'Cooked Meals']
-        self.dislike = []
+        self.love = ['Sashimi', 'Super Sashimi', 'Watermelon', 'Melon']
+        self.like = ['Fish (All, except Largemouth Bass', 'Milk', 'Cooked Meals']
+        self.dislike = ['Largemouth Bass', 'Mashed Potatoes', 'Baked Sweet Potato', 'Strawberries']
         self.hate = []
 
 
 class Charlie(Character):
     def __init__(self):
         super().__init__('Male', 'No')
-        self.love = []
-        self.like = []
-        self.dislike = []
+        self.love = ['Bibimbap'],
+        self.like = ['Flowers', 'Most Cooked Meals',]
+        self.dislike = ['Quick Pickles', 'Veggie Tempura', 'Veggie Stir-Fry', 'Oden', 'Gratin' ]
         self.hate = []
 
 
 class Chris(Character):
     def __init__(self):
         super().__init__('Female', 'No')
-        self.love = []
-        self.like = []
-        self.dislike = []
+        self.love = ['Pound Cake', 'Strawberry Shortcake', 'Fruit Juice', 'Fruit Punch', 'Apple', ]
+        self.like = ['Milk', 'Flowers', 'Most Cooked Meals', ]
+        self.dislike = ['Tomacaro Salad','Veggie Cake', ]
         self.hate = []
 
 
 class Cole(Character):
     def __init__(self):
         super().__init__('Male', 'No')
-        self.love = []
-        self.like = []
-        self.dislike = []
+        self.love = ['Fish Stew', 'Stew', 'Mushroom Curry', ]
+        self.like = ['Most Cooked Meals']
+        self.dislike = ['Watermelon']
         self.hate = []
 
 
@@ -463,8 +459,8 @@ class Daryl(Character):
 class Flora(Character):
     def __init__(self):
         super().__init__('Female', 'No')
-        self.love = ['Butter(S☆)', 'Golden Wool', 'HomeCooked Meals']
-        self.like = []
+        self.love = ['Butter(S☆)', 'Golden Wool', 'Herbal Hot Pot', 'Mushroom Curry', 'Curry', 'Crops' ]
+        self.like = ['Fish (All)', 'Cooked Meals']
         self.dislike = []
         self.hate = []
 
@@ -473,8 +469,8 @@ class Garrett(Character):
     def __init__(self):
         super().__init__('Male', 'No')
         self.special = ['Meuniere Set']
-        self.love = []
-        self.like = ['Milk (Any)']
+        self.love = ['Heartwarming Soup', 'Sashimi', 'Oden', 'Meuniere Set' ]
+        self.like = ['Milk (Any)', 'Butter', 'Cheese', 'Most Cooked Meals', ]
         self.dislike = []
         self.hate = []
 
@@ -482,9 +478,10 @@ class Garrett(Character):
 class Gary(Character):
     def __init__(self):
         super().__init__('Male', 'No')
-        self.love = ['Fish', 'Marinade']
-        self.like = ['Super Sashimi']
-        self.dislike = []
+        self.love = ['Fish', 'Marinade', 'Heartwarming Soup', 'Sweet Potato Soup', 'Fish Stew', 'Meuniere Set',
+                     'Sushi', 'Crops' ]
+        self.like = ['Super Sashimi', 'Mashed Potatoes', ]
+        self.dislike = ['Gratin', 'Mushroom Gratin', 'Ink-Black Pasta']
         self.hate = []
 
 
@@ -500,16 +497,17 @@ class Gavin(Character):
 class Hugh(Character):
     def __init__(self):
         super().__init__('Male', 'No')
-        self.love = []
-        self.like = []
-        self.dislike = []
+        self.love = ['Milk (Chapter 1)', 'Bronze Coin (Year 1)', 'Silver Coin (Year 2)', 'Heartwarming Soup', 'Stew',
+                    'Mushroom Curry', 'Curry', 'Bananas' ]
+        self.like = ['Most Cooked Meals']
+        self.dislike = ['Veggie Cake', 'Crops']
         self.hate = []
 
 
 class Kate(Character):
     def __init__(self):
         super().__init__('Female', 'No')
-        self.love = []
+        self.love = ['Flowers (All)']
         self.like = []
         self.dislike = []
         self.hate = []
@@ -663,7 +661,6 @@ takakura = Takakura()
 tei = Tei()
 van = Van()
 vesta = Vesta()
-vinnie = Vinnie()
+
 
 if __name__ == '__main__':
-    app.run()
