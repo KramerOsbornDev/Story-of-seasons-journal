@@ -3,7 +3,7 @@ from tkinter import ttk
 
 
 class Character:
-    def __init__(self, name, gender, marriage, special, loves, likes, dislikes, hates, ):
+    def __init__(self, name, gender, marriage, special, loves, likes, dislikes, hates):
         self.name = name
         self.gender = gender
         self.marriage = marriage
@@ -12,6 +12,19 @@ class Character:
         self.likes = likes
         self.dislikes = dislikes
         self.hates = hates
+
+
+def display_character_info(character):
+    info = f"Name: {character.name}\n" \
+           f"Gender: {character.gender}\n" \
+           f"Marriage: {character.marriage}\n" \
+           f"Special: {', '.join(character.special)}\n" \
+           f"Loves: {', '.join(character.loves)}\n" \
+           f"Likes: {', '.join(character.likes)}\n" \
+           f"Dislikes: {', '.join(character.dislikes)}\n" \
+           f"Hates: {', '.join(character.hates)}"
+
+    info_label.config(text=info)
 
 
 characters = [
@@ -50,7 +63,7 @@ characters = [
     Character("Matthew", "Male", "Yes",
               special=[],
               loves=['Heartwarming Soup', 'Lovely Smoothie', 'Sweet Smoothie', 'Smoothie',
-                                          'Mushroom_curry', 'kabayaki', 'grilled_fish', 'crops_s'],
+                     'Mushroom_curry', 'kabayaki', 'grilled_fish', 'crops_s'],
               likes=['milk', 'eggs', 'root_crops', 'cooked_dishes'],
               dislikes=[],
               hates=['tempura', 'kakiage_tempura', 'minced_veggie_bowl', 'butter']
@@ -106,7 +119,7 @@ characters = [
 
     Character("Chris", "Female", "No",
               special=[],
-              loves=['Pound Cake', 'Strawberry Shortcake', 'Fruit Juice', 'Fruit Punch', 'Apple',],
+              loves=['Pound Cake', 'Strawberry Shortcake', 'Fruit Juice', 'Fruit Punch', 'Apple', ],
               likes=['Milk', 'Flowers', 'Most Cooked Meals'],
               dislikes=['Tomacaro Salad', 'Veggie Cake'],
               hates=[]
@@ -131,7 +144,7 @@ characters = [
 
     Character("Flora", "Female", "No",
               special=[],
-              loves=['Butter(S☆)', 'Golden Wool', 'Herbal Hot Pot', 'Mushroom Curry', 'Curry', 'Crops' ],
+              loves=['Butter(S☆)', 'Golden Wool', 'Herbal Hot Pot', 'Mushroom Curry', 'Curry', 'Crops', ],
               likes=['Fish (All)', 'Cooked Meals', ],
               dislikes=[],
               hates=[]
@@ -149,7 +162,7 @@ characters = [
               special=[],
               loves=['Fish', 'Marinade', 'Heartwarming Soup', 'Sweet Potato Soup', 'Fish Stew', 'Meuniere Set',
                      'Sushi', 'Crops'],
-              likes=['Super Sashimi', 'Mashed Potatoes',],
+              likes=['Super Sashimi', 'Mashed Potatoes', ],
               dislikes=['Gratin', 'Mushroom Gratin', 'Ink-Black Pasta'],
               hates=[]
               ),
@@ -157,7 +170,7 @@ characters = [
     Character("Gavin", "Male", "No",
               special=[],
               loves=['Fish', 'Sashimi' 'Super Sashimi,'],
-              likes=['Most Cooked Meals', 'Trick Blue Flower', 'Coins' ],
+              likes=['Most Cooked Meals', 'Trick Blue Flower', 'Coins', ],
               dislikes=['Butter', 'Quick Pickles', 'Grape Pie', 'Melon Pie', 'Blue-Sky Pie', 'Blue Jam'],
               hates=[],
               ),
@@ -165,7 +178,7 @@ characters = [
     Character("Hugh", "Male", "No",
               special=[],
               loves=['Milk (Chapter 1)', 'Bronze Coin (Year 1)', 'Silver Coin (Year 2)', 'Heartwarming Soup', 'Stew',
-                    'Mushroom Curry', 'Curry', 'Bananas',],
+                     'Mushroom Curry', 'Curry', 'Bananas', ],
               likes=['Most Cooked Meals'],
               dislikes=['Veggie Cake', 'Crops '],
               hates=[]
@@ -182,7 +195,8 @@ characters = [
     Character("Mukumuku", "Female", "No",
               special=[],
               loves=[],
-              likes=['Fish', 'Fish-based Cooked Meals', 'Golden Wool', 'Passion Bloom Flower', 'Egg', 'Milk', 'Fodder',],
+              likes=['Fish', 'Fish-based Cooked Meals', 'Golden Wool', 'Passion Bloom Flower', 'Egg', 'Milk',
+                     'Fodder', ],
               dislikes=[],
               hates=[]
               ),
@@ -263,404 +277,26 @@ characters = [
               special=[],
               loves=['Butter(S*)', 'Cheese(S*)', 'Strawberries(S)', 'Normal Milk(S*)', 'Flowers'],
               likes=[],
-              dislikes=['Marinade', 'Caprese Salad' ],
+              dislikes=['Marinade', 'Caprese Salad', ],
               hates=[],
               ),
 ]
 
+root = tk.Tk()
+root.title("Character Journal")
 
-def handle_selection(event):
-    selected_option = dropdown.get()
-    display_character_details(selected_option)
+menu_frame = tk.Frame(root)
+menu_frame.pack(pady=10)
 
+info_label = tk.Label(root, text="", font=("Poppins", 20))
+info_label.pack(pady=10)
 
-def display_character_details(character_name):
-    # Find the selected character instance
-    selected_character = next((character for character in characters if character.name == character_name), None)
+style = ttk.Style()
+style.configure("MenuButton.TButton", font=("Poppins", 15, ), padding=10)
 
-    if selected_character is None:
-        return
+for character in characters:
+    button = ttk.Button(menu_frame, text=character.name, style="MenuButton.TButton",
+                        command=lambda char=character: display_character_info(char))
+    button.pack(side=tk.LEFT, padx=10)
 
-    # Create a new window for character details
-    character_window = tk.Toplevel(window)
-    character_window.title(f"{character_name} Details")
-
-    # Create labels to display character information
-    name_label = tk.Label(character_window, text=f"Name: {character_name}")
-    name_label.pack()
-
-    gender_label = tk.Label(character_window, text=f"Gender: {selected_character.gender}")
-    gender_label.pack()
-
-    marriage_label = tk.Label(character_window, text=f"Marriage: {selected_character.marriage}")
-    marriage_label.pack()
-
-    likes_label = tk.Label(character_window, text=f"Likes: {', '.join(selected_character.likes)}")
-    likes_label.pack()
-
-    dislikes_label = tk.Label(character_window, text=f"Dislikes: {', '.join(selected_character.dislikes)}")
-    dislikes_label.pack()
-
-
-# Create the main window
-window = tk.Tk()
-window.title("Character Menu")
-
-# Create a label to display character details
-character_details_label = tk.Label(window, text="Character Details")
-character_details_label.pack()
-
-# Create the dropdown menu
-dropdown = ttk.Combobox(window, values=[character.name for character in characters])
-dropdown.bind("<<ComboboxSelected>>", handle_selection)
-dropdown.pack()
-
-window.mainloop()
-
-
-class Character:
-    def __init__(self, gender, marriage,):
-        self.gender = gender
-        self.marriage = marriage
-        self.likes = []
-        self.dislikes = []
-
-
-class Cecilia(Character):
-    def __init__(self):
-        super().__init__('Female', 'Yes')
-        self.likes = ['Rare Crop 7', 'Star Milk (S)', 'Star Milk (SS)', 'Sashimi', 'Meuniere Set', 'Nizaka_Gozen',
-                      'Strawberry Cake', 'Mushroom Curry', 'Mushroom Gratin', 'Milk Soup', 'Sushi', 'Flowers',
-                      'Hitogata Haniwa', 'Horse Doll', 'Gekko Seki']
-        self.dislikes = ['Rare Crop 4', 'Rare Crop 18', 'Cucumber', 'Unknown Dish',
-                         'Fish Stew', 'Pickles', 'Kabayaki Don', 'Dig Site Relics']
-
-
-class Lumina(Character):
-    def __init__(self):
-        super().__init__('Female', 'Yes')
-        self.love = ['Sweet Potato Soup', 'Egg', 'Cheese (S)', 'Trick Blue Flower',
-                     'Melon (S)', 'Passionbloom Flower', 'Moonlight Ore']
-        self.likes = ['Golden Wool', 'Flowers']
-        self.dislikes = ['Butter(S)', 'Fish']
-
-
-class Nami(Character):
-    def __init__(self):
-        super().__init__('Non-Binary', 'Yes')
-        self.love = ['Trick Blue Flower', 'Clay Figurine', 'Leaf Fossil', 'Melon (S)', 'Curry']
-        self.likes = ['Milky Soup', 'Egg Soup', 'Fossils']
-        self.dislikes = ['All Flowers Except Trick Blue Flowers', 'Golden Wool']
-
-
-class Molly(Character):
-    def __init__(self):
-        super().__init__('Female', 'Yes')
-        self.love = ['Butter', 'Golden Wool']
-        self.like = ['Butter (B+)', 'Cheese', 'Flowers', 'Blue Melon (S)', 'Melon(S)',
-                     'Rare Crop 7 (S)', 'Rare Crop 8(S)', 'Large Spotted Char', 'Curry', 'Tataaro Stir Fry',
-                     'fried_tataaro', 'Crispy Tarte', 'Egg Soup', 'Starry Sky Pie', 'Irogo No Mi', 'Coin',
-                     'Silver Coin', 'Gold Coin', 'Gekkou Seki',
-                     'Moonlight Ore', 'Chitose Stone', 'Normal Milk (S)']
-        self.dislike = ['Large King Masu', 'Large Bucketmouth Bass', 'Failed Dish', 'Fish Stew', 'Konsaibaise',
-                        'Vegetable Juice', 'Mamedon', 'Yakuzen Soup', 'Portucci', 'Fertilizer', 'Fodder',
-                        'Animal Treat', 'Dig Site Things']
-        self.hate = ['Large Amur Catfish']
-
-
-class Matthew(Character):
-    def __init__(self):
-        super().__init__('Male', 'Yes')
-        self.love = ['Heartwarming Soup', 'Lovely Smoothie', 'Sweet Smoothie', 'Smoothie', 'Mushroom_curry', 'kabayaki',
-                     'grilled_fish', 'crops_s']
-        self.like = ['milk', 'eggs', 'root_crops', 'cooked_dishes']
-        self.hate = ['tempura', 'kakiage_tempura', 'minced_veggie_bowl', 'butter']
-
-
-class Gordy(Character):
-    def __init__(self):
-        super().__init__('Male', 'Yes')
-        self.love = ['Cheese(S)', 'Melon (S)', 'Milk (S)']
-        self.like = ['Flowers', 'Eggs']
-        self.dislikes = ['Super Sashimi', "Lou's Spices"]
-        self.hate = ['Fish']
-
-
-class Gustafa(Character):
-    def __init__(self):
-        super().__init__('Male', 'Yes')
-        self.love = ['Cheese(S)', 'Melon (S)', 'Milk (S)']
-        self.like = ['Toy Flower']
-        self.dislike = ['marinade', 'large_amur_catfish', 'golden_wool']
-
-
-class Rock(Character):
-    def __init__(self):
-        super().__init__('Male', 'Yes')
-        self.love = ['Toy Flowers', 'Mist Moon Flowers', 'Fossils', 'Meals (Made by you)']
-        self.like = ['Coins', 'Clay Figurine']
-        self.dislike = ['Burnt or Spoiled food'],
-
-
-class Baddoch(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = ['Cheese(S*)', 'Melon(S)', 'Super Shashimi', 'Milk(S*)']
-        self.like = ['Fish', 'Sashimi']
-        self.dislike = ['Curry']
-        self.hate = ['Butter (S*)']
-
-
-class Carter(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = ['Sashimi', 'Super Sashimi', 'Watermelon', 'Melon']
-        self.like = ['Fish (All, except Largemouth Bass', 'Milk', 'Cooked Meals']
-        self.dislike = ['Largemouth Bass', 'Mashed Potatoes', 'Baked Sweet Potato', 'Strawberries']
-        self.hate = []
-
-
-class Charlie(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = ['Bibimbap'],
-        self.like = ['Flowers', 'Most Cooked Meals',]
-        self.dislike = ['Quick Pickles', 'Veggie Tempura', 'Veggie Stir-Fry', 'Oden', 'Gratin' ]
-        self.hate = []
-
-
-class Chris(Character):
-    def __init__(self):
-        super().__init__('Female', 'No')
-        self.love = ['Pound Cake', 'Strawberry Shortcake', 'Fruit Juice', 'Fruit Punch', 'Apple', ]
-        self.like = ['Milk', 'Flowers', 'Most Cooked Meals', ]
-        self.dislike = ['Tomacaro Salad','Veggie Cake', ]
-        self.hate = []
-
-
-class Cole(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = ['Fish Stew', 'Stew', 'Mushroom Curry', ]
-        self.like = ['Most Cooked Meals']
-        self.dislike = ['Watermelon']
-        self.hate = []
-
-
-class Daryl(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = ['Coin', 'Leaf Fossil', 'Golden Fork', 'Clay Figurine', 'Fish (All)']
-        self.like = ['Egg (All)']
-        self.dislike = ['Herb (any)', 'Flowers (All)', 'Milk (All)']
-        self.hate = []
-
-
-class Flora(Character):
-    def __init__(self):
-        super().__init__('Female', 'No')
-        self.love = ['Butter(S☆)', 'Golden Wool', 'Herbal Hot Pot', 'Mushroom Curry', 'Curry', 'Crops' ]
-        self.like = ['Fish (All)', 'Cooked Meals']
-        self.dislike = []
-        self.hate = []
-
-
-class Garrett(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.special = ['Meuniere Set']
-        self.love = ['Heartwarming Soup', 'Sashimi', 'Oden', 'Meuniere Set' ]
-        self.like = ['Milk (Any)', 'Butter', 'Cheese', 'Most Cooked Meals', ]
-        self.dislike = []
-        self.hate = []
-
-
-class Gary(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = ['Fish', 'Marinade', 'Heartwarming Soup', 'Sweet Potato Soup', 'Fish Stew', 'Meuniere Set',
-                     'Sushi', 'Crops' ]
-        self.like = ['Super Sashimi', 'Mashed Potatoes', ]
-        self.dislike = ['Gratin', 'Mushroom Gratin', 'Ink-Black Pasta']
-        self.hate = []
-
-
-class Gavin(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = ['Fish', 'Super Sashimi,']
-        self.like = ['HomeCooked Meals', 'Trick Blue Flower', 'Coins']
-        self.dislike = ['Butter(S☆)']
-        self.hate = []
-
-
-class Hugh(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = ['Milk (Chapter 1)', 'Bronze Coin (Year 1)', 'Silver Coin (Year 2)', 'Heartwarming Soup', 'Stew',
-                    'Mushroom Curry', 'Curry', 'Bananas' ]
-        self.like = ['Most Cooked Meals']
-        self.dislike = ['Veggie Cake', 'Crops']
-        self.hate = []
-
-
-class Kate(Character):
-    def __init__(self):
-        super().__init__('Female', 'No')
-        self.love = ['Flowers (All)']
-        self.like = []
-        self.dislike = []
-        self.hate = []
-
-
-class Lou(Character):
-    def __init__(self):
-        super().__init__('Female', 'No')
-        self.love = []
-        self.like = ['Milk, Crops']
-        self.dislike = []
-        self.hate = []
-
-
-class Mukumuku(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = []
-        self.like = ['Fish', 'Fish-based Cooked Meals', 'Golden Wool', 'Passion Bloom Flower', 'Egg', 'Milk', 'Fodder']
-        self.dislike = []
-        self.hate = []
-
-
-class Nina(Character):
-    def __init__(self):
-        super().__init__('Female', 'No')
-        self.love = ['Melon(S)', 'Sweet Potato Soup']
-        self.like = ['Flower', 'Homecooked Meals']
-        self.dislike = []
-        self.hate = []
-
-
-class Pui(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = []
-        self.like = []
-        self.dislike = []
-        self.hate = []
-
-
-class Romana(Character):
-    def __init__(self):
-        super().__init__('Female', 'No')
-        self.love = ['Milk(S☆)', 'PassionBloom Flower', 'Happy Lamp Flower']
-        self.like = ['Flowers', 'weird statue', 'Super Sashimi']
-        self.dislike = []
-        self.hate = []
-
-
-class San(Character):
-    def __init__(self):
-        super().__init__('Female', 'No')
-        self.special = ['Goddess Drop Flower']
-        self.love = []
-        self.like = ['Flowers, Milk']
-        self.dislike = []
-        self.hate = []
-
-
-class Sebastian(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = ['Milk', 'Eggs', 'Cheese', 'Butter', 'Super Sashimi', 'Fish', 'PassionBloom' 'Flower']
-        self.like = []
-        self.dislike = []
-        self.hate = []
-
-
-class Sully(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = []
-        self.like = []
-        self.dislike = []
-        self.hate = []
-
-
-class Takakura(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = ['Large Spotted Char', 'Milk(S*)', 'Cheese(S*)']
-        self.like = ['Cooked Meals']
-        self.dislike = []
-        self.hate = []
-
-
-class Tei(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = []
-        self.like = ['Milk', 'Flowers', 'Coins', 'Gemstones', 'Meals']
-        self.dislike = []
-        self.hate = []
-
-
-class Van(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = ['Eggs']
-        self.like = ['Milk', 'Cheese(S*)', 'Golden Wool', 'Coins', 'Strawberries(S)']
-        self.dislike = []
-        self.hate = []
-
-
-class Vesta(Character):
-    def __init__(self):
-        super().__init__('Female', 'No')
-        self.love = ['Butter(S*)', 'Cheese(S*)', 'Strawberries(S)', 'Normal Milk(S*)', 'Flowers']
-        self.like = ['Egg']
-        self.dislike = []
-        self.hate = []
-
-
-class Vinnie(Character):
-    def __init__(self):
-        super().__init__('Male', 'No')
-        self.love = []
-        self.like = []
-        self.dislike = []
-        self.hate = []
-
-
-cecilia = Cecilia()
-lumina = Lumina()
-nami = Nami()
-molly = Molly()
-matthew = Matthew()
-gordy = Gordy()
-gustafa = Gustafa()
-rock = Rock()
-baddoch = Baddoch()
-carter = Carter()
-charlie = Charlie()
-chris = Chris()
-cole = Cole()
-flora = Flora()
-garrett = Garrett()
-gary = Gary()
-gavin = Gavin()
-hugh = Hugh()
-kate = Kate()
-mukumuku = Mukumuku()
-nina = Nina()
-pui = Pui()
-romana = Romana()
-san = San()
-sebastian = Sebastian()
-sully = Sully()
-takakura = Takakura()
-tei = Tei()
-van = Van()
-vesta = Vesta()
-
-
-if __name__ == '__main__':
+root.mainloop()
