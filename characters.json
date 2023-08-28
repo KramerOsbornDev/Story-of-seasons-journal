@@ -1,0 +1,313 @@
+[
+  {
+    "name": "Cecilia",
+    "gender": "Female",
+    "marriage": "Yes",
+    "special": [],
+    "loves": [],
+    "likes": ["Rare Crop 7", "Star Milk (S)", "Star Milk (SS)"],
+    "dislikes": ["Cucumber", "Fish Stew"],
+    "hates": []
+  },
+  {
+    "name": "Lumina",
+    "gender": "Female",
+    "marriage": "Yes",
+    "special": [],
+    "loves": ["Sweet Potato Soup", "Egg", "Cheese (S)", "Trick Blue Flower"],
+    "likes": ["Golden Wool", "Flowers"],
+    "dislikes": ["Butter(S)", "Fish"],
+    "hates": []
+  },
+  {
+    "name": "Nami",
+    "gender": "Non-binary",
+    "marriage": "Yes",
+    "special": [],
+    "loves": ["Trick Blue Flower", "Clay Figurine", "Leaf Fossil", "Melon (S)", "Curry"],
+    "likes": ["Milky Soup", "Egg Soup", "Fossils"],
+    "dislikes": ["All Flowers Except Trick Blue Flowers", "Golden Wool"],
+    "hates": []
+  },
+  {
+    "name": "Molly",
+    "gender": "Female",
+    "marriage": "Yes",
+    "special": [],
+    "loves":["Butter", "Golden Wool"],
+    "likes": [],
+    "dislikes": [],
+    "hates": []
+  },
+  {
+  "name": "Matthew",
+  "gender": "Male",
+  "marriage": "Yes",
+  "special": [],
+  "loves": ["Heartwarming Soup", "Lovely Smoothie", "Sweet Smoothie", "Smoothie", "Mushroom Curry", "Kabayaki", "Grilled Fish", "Crops (S)"],
+  "likes": ["Milk", "Eggs", "Root Crops", "cooked_dishes"],
+  "dislikes": [],
+  "hates": ["Tempura", "Kakiage Tempura", "Minced Veggie Bowl", "Butter"]
+  },
+  {
+  "name": "Gordy",
+  "gender": "Male",
+  "marriage": "Yes",
+  "special": [],
+  "loves": ["Cheese(S)", "Melon (S)", "Milk (S)"],
+  "likes": [],
+  "dislikes": [],
+  "hates": []
+  },
+  {
+  "name": "Gustafa",
+  "gender": "Male",
+  "marriage": "Yes",
+  "special": [],
+  "loves": ["Cheese(S)", "Melon(S)", "Milk(S)"],
+  "likes": [],
+  "dislikes": [],
+  "hates": []
+  },
+  {
+  "name": "Rock",
+  "gender": "Male",
+  "marriage": "Yes",
+  "special": [],
+  "loves": ["Toy Flowers", "Mist Moon Flowers", "Fossils", "Meals made by you"],
+  "likes": ["Coins", "Clay Figurine"],
+  "dislikes": [],
+  "hates": ["Burnt or Spoiled Food"]
+  },
+  {
+  "name": "Baddoch",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Cheese(S*)", "Melon(S)", "Super Shashimi", "Milk(S*)"],
+  "likes": [],
+  "dislikes": [],
+  "hates": []
+  },
+  {
+  "name": "Carter",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Sashimi", "Super Sashimi", "Watermelon", "Melon"],
+  "likes": ["Fish (all except Largemouth Bass", "Milk"],
+  "dislikes": ["Largemouth Bass", "Mashed Potatoes", "Baked Sweet Potato", "Strawberries"],
+  "hates": []
+  },
+  {
+  "name": "Charlie",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": ["bibimbap"],
+  "likes": ["Flowers", "Most cooked Meals"],
+  "dislikes": ["Quick Pickles", "Veggie Tempura", "Veggie Stir-fry", "Oden", "Gratin"],
+  "hates": []
+  },
+  {
+  "name": "Chris",
+  "gender": "Female",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Pound Cake", "Strawberry Shortcake", "Fruit Juice", "Fruit Punch", "Apple" ],
+  "likes": ["Milk", "Flowers", "Most Cooked Meals"],
+  "dislikes": ["Tomacaro Salad', 'Veggie Cake"],
+  "hates": []
+  },
+  {
+  "name": "Cole",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Fish Stew", "Stew", "Mushroom Curry"],
+  "likes": ["Most cooked Meals"],
+  "dislikes": ["Watermelon"],
+  "hates": []
+  },
+  {
+  "name": "Daryl",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Coin", "Leaf Fossil", "Golden Fork", "Clay Figurine", "Fish (All)", "Stew", "Veggie Stir-Fry", "Starchy Veggies", "Curry" ],
+  "likes": ["Egg (All)", "Cooked Meals"],
+  "dislikes": ["Herb (Any)", "Flowers (All)", "Milk (All)", "Crops" ],
+  "hates": []
+  },
+  {
+  "name": "Flora",
+  "gender": "Female",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Butter(S☆)", "Golden Wool", "Herbal Hot Pot", "Mushroom Curry", "Curry", "Crops" ],
+  "likes": ["Fish (All)", "Cooked Meals" ],
+  "dislikes": ["Gratin", "Mushroom Gratin" ],
+  "hates": []
+  },
+  {
+  "name": "Garret",
+  "gender": "Male",
+  "marriage": "No",
+  "special": ["Meuniere Set"],
+  "loves": ["Heartwarming Soup", "Sashimi", "Oden" ],
+  "likes": ["Super Sashimi", "Mashed Potatoes"],
+  "dislikes": ["Gratin", "Mushroom Gratin"],
+  "hates": []
+  },
+  {
+  "name": "Gary",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Fish", "Marinade", "Heartwarming Soup", "Sweet Potato Soup", "Fish Stew", "Meuniere Set", "Sushi", "Crops" ],
+  "likes": ["Super Sashimi", "Mashed Potatoes"],
+  "dislikes": ["Gratin", "Mushroom Gratin", "Ink-Black Pasta" ],
+  "hates": []
+  },
+  {
+  "name": "Gavin",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Fish", "Sashimi", "Super Sashimi"],
+  "likes": ["Most Cooked Meals", "Trick Blue Flower", "Coins"],
+  "dislikes": ["Butter", "Quick Pickles", "Grape Pie", "Melon Pie", "Blue-Sky Pie", "Blue Jam"],
+  "hates": []
+  },
+  {
+  "name": "Hugh",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Milk (Chapter 1)", "Bronze Coin (Year 1)", "Silver Coin (Year 2)", "Heartwarming Soup", "Stew","Mushroom Curry", "Curry", "Bananas" ],
+  "likes": ["Most Cooked Meals"],
+  "dislikes": ["Veggie Cake"],
+  "hates": []
+  },
+  {
+  "name": "Kate",
+  "gender": "Female",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Flowers(All)"],
+  "likes": [],
+  "dislikes": [],
+  "hates": []
+  },
+  {
+  "name": "Mukumuku",
+  "gender": "Female",
+  "marriage": "No",
+  "special": [],
+  "loves": [],
+  "likes": ["Fish", "Fish-based Cooked Meals", "Golden Wool", "Passion Bloom Flower", "Egg", "Milk", "Fodder"],
+  "dislikes": [],
+  "hates": []
+  },
+  {
+  "name": "Nina",
+  "gender": "Female",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Melon(S)", "Sweet Potato Soup"],
+  "likes": ["Flowers (All)", "Homecooked Meals"  ],
+  "dislikes": [],
+  "hates": []
+  },
+  {
+  "name": "Pui",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Meals", "Milk (Any)", "All Flowers", "Eggs", "Fish", "Vegetables" ],
+  "likes": [],
+  "dislikes": [],
+  "hates": []
+  },
+  {
+  "name": "Romana",
+  "gender": "Female",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Goddess Drop Flower"],
+  "likes": [],
+  "dislikes": [],
+  "hates": []
+  },
+  {
+  "name": "San",
+  "gender": "Female",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Goddess Drop Flower", "Marinade"],
+  "likes": ["Flowers", "Milk", "Mashed Potatoes"],
+  "dislikes": [],
+  "hates": []
+  },
+  {
+  "name": "Sebastian",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Milk", "eggs", "Cheese", "Butter", "Super Sashimi", "Fish", "PassionBloom", "Flower"],
+  "likes": [],
+  "dislikes": [],
+  "hates": []
+  },
+  {
+  "name": "Sully",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": [],
+  "likes": ["Egg", "Milk (A)"],
+  "dislikes": [],
+  "hates": []
+  },
+  {
+  "name": "Takakura",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Large Spotter Char", "Milk(S*)"],
+  "likes": ["Cooked Meals"],
+  "dislikes": [],
+  "hates": []
+  },
+  {
+  "name": "Tei",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": [],
+  "likes": ["Milk", "Flowers", "Coins", "Gemstone", "Meals"],
+  "dislikes": [],
+  "hates": []
+  },
+  {
+  "name": "Van",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Eggs"],
+  "likes": [],
+  "dislikes": ["Butter (S*)" ],
+  "hates": []
+  },
+  {
+  "name": "Vesta",
+  "gender": "Male",
+  "marriage": "No",
+  "special": [],
+  "loves": ["Butter(S*)", "Cheese(S*)", "Strawberries(S)", "Normal Milk (S*)"],
+  "likes": [],
+  "dislikes": ["Marinade", "Caprese Salad"],
+  "hates": []
+  }
+]
+
