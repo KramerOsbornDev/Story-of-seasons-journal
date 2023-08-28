@@ -9,15 +9,17 @@
 - <s>Create a drop-down selection menu</s>
 
 <b><h1> Current Update Goals</h1></b>
-- Finish adding attributes to each character
+- <s>Finish adding attributes to each character</s>
 
   <h1><b>Future Update Tasks</b></h1>
   
-  - <b>Update design to move away from a drop-down to a selection page.**</b>
+  - <b><s>Update design to move away from a drop-down to a selection page.</b></s>
   
   - Add functionality to provide more useful information for characters (Schedule, Marriage Benefits)
     
   - Add functionality to provide information for items including recipes
     
   - Add a price checker to see item sell price difference between Van and the Shipping box
+
+  - Design the application window to be responsive so the content can be reformated based on window size.
   
